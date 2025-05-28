@@ -60,14 +60,13 @@ O projeto é dividido em três módulos:
 | Semana | Tarefa                              |
 |--------|-------------------------------------|
 | 1      | Diagrama de Caso de Uso (Draw.io)   |
-| 2      | Classes Java: Produto, Venda        |
-| 3      | Sistema de Login (POO)              |
-| 4      | Lógica de Vendas + Descontos        |
-| 5      | Controle de Estoque (Validade)      |
+| 2      | Diagrama de Classe                  |
+| 3      | Documentos de requisitos            |
+| 4      | Teste de unidades                   |
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas                    
 
 - **Java (POO Básico)**
 - **Draw.io (Diagramas UML)**
