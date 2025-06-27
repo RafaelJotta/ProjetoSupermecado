@@ -1,10 +1,9 @@
 Diagrama de Classes - Arquitetura MVC + DAO
 Este diagrama ilustra a arquitetura principal do SGS (Sistema de Gerenciamento de Supermercado), mostrando a separação de responsabilidades entre as camadas de View, Controller, Model (com Entidades e Serviços) e DAO.
-
-%%{init: {'theme': 'default'}}%%
-classDiagram
-    direction TB
-
+    
+    %%{init: {'theme': 'default'}}%%
+    classDiagram
+        direction TB
     %% VIEW (FXML)
     class UserManagementScreen_FXML {
         <<FXML>>
