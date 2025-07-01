@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainBorderPane" prefHeight="700.0" prefWidth="1000.0" styleClass="root" stylesheets="@../css/dark-theme.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.supermercado.controller.GerenteMainScreenController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Arquivo">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleGerenciarUsuarios" text="Gerenciar Utilizadores" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSair" text="Sair" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cadastros">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleGerenciarProdutos" text="Produtos" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleGerenciarCategorias" text="Categorias" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleGerenciarFornecedores" text="Fornecedores" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Operações">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleAjustarEstoque" text="Ajustar Estoque" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Relatórios">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleRelatorioVendas" text="Relatório de Vendas" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleRelatorioEstoqueBaixo" text="Relatório de Estoque Baixo" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

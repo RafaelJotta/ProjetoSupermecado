@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="25.0" styleClass="root" stylesheets="@../css/dark-theme.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.supermercado.controller.LoginScreenController">
+    <padding>
+        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+    </padding>
+    <children>
+        <Label styleClass="header-label" text="SGS - Sistema de Gestão" />
+        <GridPane hgap="10.0" vgap="15.0">
+            <children>
+                <Label text="Utilizador:" GridPane.halignment="RIGHT" />
+                <TextField fx:id="usernameField" promptText="Digite o seu login" GridPane.columnIndex="1" />
+                <Label text="Senha:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                <PasswordField fx:id="passwordField" promptText="Digite a sua senha" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <Button fx:id="loginButton" defaultButton="true" onAction="#handleLoginButtonAction" styleClass="button-primary" text="Entrar" />
+        <Label fx:id="statusLabel" managed="false" visible="false" />
+    </children>
+</VBox>

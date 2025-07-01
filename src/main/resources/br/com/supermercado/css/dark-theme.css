@@ -1,0 +1,152 @@
+/*
+/* ===============================================================
+   TEMA DARK PROFISSIONAL PARA A APLICAÇÃO SGS (v2 - Contraste Melhorado)
+   =============================================================== */
+
+/* --- Configurações Globais e Fundo --- */
+.root {
+    -fx-background-color: #2B2B2B; /* Cor de fundo principal (cinza escuro) */
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-accent: #0A84FF; /* Um azul mais moderno e acessível */
+}
+
+/* --- Estilos para Títulos e Rótulos --- */
+.label {
+    -fx-text-fill: #D4D4D4; /* COR DO TEXTO MAIS CLARA PARA MELHOR LEITURA */
+    -fx-font-size: 14px;
+}
+
+.header-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+.sub-header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E0E0E0;
+}
+
+/* --- Estilos para Botões --- */
+.button {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 8, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #4E5254;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 12, 0, 0, 4);
+}
+
+.button:pressed {
+    -fx-background-color: #313335;
+    -fx-scale-y: 0.98;
+    -fx-scale-x: 0.98;
+}
+
+.button-primary {
+    -fx-background-color: -fx-accent;
+}
+
+.button-primary:hover {
+    -fx-background-color: derive(-fx-accent, 20%);
+}
+
+/* --- Estilos para Campos de Texto e ComboBox --- */
+.text-field, .password-field, .combo-box .list-cell, .text-area {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #D4D4D4;
+    -fx-prompt-text-fill: #8C8C8C;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused, .text-area:focused {
+    -fx-border-color: -fx-accent;
+    -fx-effect: dropshadow(gaussian, derive(-fx-accent, 50%), 10, 0, 0, 0);
+}
+
+.combo-box .arrow {
+    -fx-background-color: -fx-accent;
+}
+
+/* --- Estilos para TableView (Tabela com Fundo Claro) --- */
+.table-view {
+    /* MUDANÇA PRINCIPAL: FUNDO BRANCO PARA A TABELA */
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #555555;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 15, 0, 0, 5);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2B2B2B; /* Cabeçalho continua escuro para contraste */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #FFFFFF; /* Texto do cabeçalho branco */
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .table-row-cell {
+    /* MUDANÇA PRINCIPAL: FUNDO BRANCO E TEXTO PRETO PARA AS LINHAS */
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 0 0 1 0; /* Linha fina de separação */
+    -fx-text-fill: #2B2B2B; /* Texto escuro para ler no fundo branco */
+    -fx-font-size: 13px;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #F7F7F7; /* Cor ligeiramente diferente para linhas ímpares */
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #E8F3FF; /* Cor de hover azul claro */
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: -fx-accent; /* Cor de seleção azul */
+    -fx-text-fill: white; /* Texto da linha selecionada fica branco */
+}
+
+.table-view .table-row-cell:selected .text {
+    -fx-fill: white; /* Garante que o texto dentro da célula selecionada fique branco */
+}
+
+
+/* --- Estilos para a Barra de Menus --- */
+.menu-bar {
+    -fx-background-color: #2B2B2B;
+}
+
+.menu-bar .label {
+    -fx-text-fill: #D4D4D4;
+    -fx-font-weight: bold;
+}
+
+.menu:hover, .menu:showing {
+    -fx-background-color: #3C3F41;
+}
+
+.menu-item:focused {
+    -fx-background-color: -fx-accent;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+.context-menu {
+    -fx-background-color: #3C3F41;
+    -fx-border-color: #555555;
+}
