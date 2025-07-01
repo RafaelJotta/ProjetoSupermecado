@@ -2,8 +2,7 @@
 📁 *Projeto Acadêmico*
 
 **Disciplina:**  Engenharia de Software I  
-**Aluno:** Rafael Jotta Sobrinho
- Guilherme Faria
+**Aluno:** Rafael Jotta Sobrinho / Guilherme Faria
 
 ---
 
