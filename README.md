@@ -3,6 +3,7 @@
 
 **Disciplina:**  Engenharia de Software I  
 **Aluno:** Rafael Jotta Sobrinho
+            Guilherme Faria
 
 ---
 
